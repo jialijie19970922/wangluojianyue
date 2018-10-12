@@ -64,10 +64,10 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
                 String phoneNum = mobile.getText().toString();
                 String passwrd = password.getText().toString();
                 String passwrd_sure = password_sure.getText().toString();
-                if(!CommonUtil.isMobileNO(phoneNum)) {
-                    Toast.makeText(MainActivity.this,getResources().getString(R.string.wrong_mobile_num),Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(!CommonUtil.isMobileNO(phoneNum)) {
+//                    Toast.makeText(MainActivity.this,getResources().getString(R.string.wrong_mobile_num),Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
 
                 if(passwrd == null || "".equals(passwrd)) {
                     Toast.makeText(MainActivity.this,getResources().getString(R.string.wrong_password),Toast.LENGTH_SHORT).show();
